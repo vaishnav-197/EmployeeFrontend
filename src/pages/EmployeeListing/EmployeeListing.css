@@ -1,0 +1,163 @@
+
+
+.listing{
+    margin-left: 250px;
+    width: calc(100% -250px); 
+}
+
+
+.listing-head{
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    background-color: #FDFDFD;
+    padding-top: 27px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6b7b8;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-content{
+    font-size: 20px;    
+}
+
+.right-content{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    align-items: center;
+}
+
+.sort-by{
+    width: 100px;
+    height: 28px;
+    border: 0.1px transparent;
+    border-radius: 10px;
+    background-color: #EAF9FF;
+}
+
+.create-employee{
+    width: 180px;
+    height: 50px;
+    border: 0.1px transparent;
+    border-radius: 25px;
+    background-color: #EAF9FF; 
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-employee >p{
+    font-size: 14px;
+    margin-right: 13px;
+}
+
+.create-employee > button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.01px transparent;
+    background-color: #1EB4F0;
+}
+
+
+
+
+
+
+
+
+
+.listing-content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.listing-table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-head{
+    width: 100%;
+    background-color: #EAF9FF;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.table-content{
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.active{
+    width: 111px;
+    height: 30px;
+    background-color: #D3F4BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+} 
+
+.inactive{
+    width: 111px;
+    height: 30px;
+    background-color: #FFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+} 
+
+
+.probation{
+    width: 111px;
+    height: 30px;
+    background-color: #F5ECB8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+} 
+.listing-table th{
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.listing-table td{
+    width: 250px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+i{
+    padding: 10px;
+    transition: box-shadow .3s;
+}
+
+i:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+
+

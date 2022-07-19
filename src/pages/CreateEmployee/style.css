@@ -1,0 +1,76 @@
+
+.main{
+    margin-left: 250px;
+    width: calc(100% -250px); 
+}
+.head{
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #b6b7b8;
+    font-weight: bold;
+
+}
+.buttons > button{
+    width: 120px;
+    height: 25px;
+    border: 0.4px rgba(145, 56, 56, 0.767);
+    border-radius: 2px;
+    color: white;
+    background-color:rgba(150, 150, 150, 0.767);
+    margin-left: 30px;
+}
+.submit{
+    background-color: #1EB4F0;
+}
+
+
+.form{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #b6b7b8;
+    padding-bottom: 10px;
+}
+
+.employee-input{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-input{
+    padding-left: 10px;
+    min-width: 30%;
+    margin: 20px;
+}
+
+.form-input > input{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(104, 104, 104,0.5);
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+
+.form-input > select{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid rgba(104, 104, 104,0.5);
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
+
+
+

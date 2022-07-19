@@ -1,0 +1,55 @@
+.sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.logo{
+    height: 50px;
+}
+
+nav{
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #33b5e5;
+    height: 44px;
+    border-radius: 22px  0  0 22px;
+    
+}
+
+.list{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.list >p{
+    padding-left: 8px;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+}
+
+.round{
+    height: 23px;
+    width:23px; 
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.round > img{
+    margin: auto;
+    max-width: 12px;
+    max-height: 12px;
+}
