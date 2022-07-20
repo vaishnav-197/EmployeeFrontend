@@ -1,0 +1,30 @@
+
+
+.details{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #b6b7b8;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    padding-left: 10px;
+    min-width: 30%;
+    margin: 20px;
+}
+
+
+.label{
+    font-size: 13px;
+    color: #8B8D9D;
+}
+
+
+.value{
+    font-size: 16px;
+}

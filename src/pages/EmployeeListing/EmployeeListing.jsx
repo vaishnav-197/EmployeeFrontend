@@ -11,7 +11,13 @@ const EmployeeListing = ()=>{
     const navigate = useNavigate();
     const { data, error, isLoading } = useGetAllEmployeesQuery()
     const [ deleteEmployee] = useDeleteEmployeeMutation()
-    console.log(data)
+    
+    const options = {
+            0:"ADMIN", 
+            1:"HR",
+            2:"ADMIN",
+            3:"MANAGER"
+         }
     
     
     const deleteEmployeeById = async (id)=>{
@@ -84,7 +90,7 @@ const EmployeeListing = ()=>{
                                                     <td>{element.name} </td>
                                                     <td>{element.id}</td>
                                                     <td>5.7.2022</td>
-                                                    <td>{element.role}</td>
+                                                    <td>{options[element.role]}</td>
                                                     <td>
                                                       <div className={element.status} >
                                                           <p>{element.status}</p>
