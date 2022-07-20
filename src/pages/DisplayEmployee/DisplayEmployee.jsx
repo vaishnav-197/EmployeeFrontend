@@ -14,10 +14,6 @@ const DisplayEmployee = ()=>{
         3:"MANAGER"
      }
 
-     
-
-
-
     const formFields=[
         {label:"Name" ,name:"name",},
         {label:"Email",name:"email" , },

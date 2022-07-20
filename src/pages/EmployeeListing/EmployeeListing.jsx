@@ -3,12 +3,15 @@ import './EmployeeListing.css'
 import Button from "../../components/Button"
 import InputSelect from '../../components/InputSelect'
 import { useNavigate } from "react-router-dom"
-
+import Modal from "../../components/Modal/Modal"
 
 import { useGetAllEmployeesQuery , useDeleteEmployeeMutation} from '../../api-client/index'
+import { useState } from "react"
 
 const EmployeeListing = ()=>{
     const navigate = useNavigate();
+    const [isOpen , setIsOpen] = useState(false)
+    const [id,setId] = useState('')
     const { data, error, isLoading } = useGetAllEmployeesQuery()
     const [ deleteEmployee] = useDeleteEmployeeMutation()
     
@@ -98,15 +101,23 @@ const EmployeeListing = ()=>{
                                                     </td>
                                                     <td>{element.experience}</td>
                                                     <td>
-                                                        <i class="fa-solid fa-pencil" onClick={(e)=>{
-                                                                                                     e.stopPropagation()
-                                                                                                     navigate(`/edit/${element.id}`)}} />
-                                                        <i class="fa-solid fa-trash" onClick={()=>deleteEmployeeById(element.id)}></i>
+                                                        <i class="fa-solid fa-pencil" onClick={(e)=>{        e.stopPropagation()
+                                                                                                              navigate(`/edit/${element.id}`)}} />
+                                                        <i class="fa-solid fa-trash" onClick={(e) => {   deleteEmployeeById(element.id)
+                                                                                                        e.stopPropagation()
+                                                                                                        // setIsOpen(true)
+                                                                                                        // setId(element.id)
+                                                                                                        
+                                                                                                            }}></i>
+
+        
                                                     </td>
                                            </tr>
                                         )
                                     })
                                 }
+
+                                {/* {isOpen && <Modal setIsOpen={setIsOpen} onconfirm = {deleteEmployeeById}  id ={id} />} */}
                               </>
                             ) : null}
 
